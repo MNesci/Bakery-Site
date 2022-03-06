@@ -1,0 +1,389 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Base
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+Common Layout
+*/
+
+.clearfix,
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+     margin-bottom: 25px;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+     margin-bottom: 15px;
+}
+
+/*ALL VIEWPORTS*/
+
+/*
+Header and Nav Layout
+*/
+
+header {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    padding: 20px 5% 20px 5%;
+}
+
+.logoContainer {
+    width: 200px;
+}
+
+.logo {
+    width: 100%;
+}
+
+
+/*
+Main Layout
+*/
+
+main > section {
+    padding: 15px 3%;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+
+/*
+Intro Section
+*/
+
+.aboutContentContainer {
+    display: flex;
+    align-items: center;
+}
+
+.aboutTextContainer {
+    width: 65%;
+    padding-right: 3%;
+}
+
+.aboutImgContainer {
+    width: 35%;
+}
+
+.aboutImgContainer img {
+    width: 100%;
+}
+
+
+/*
+Specials Section
+*/
+
+.specialsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.individualSpecial {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.individualSpecial img {
+    width: 80%;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+/*
+Team Section
+*/
+
+.teamRow {
+    display: flex;
+    gap: 2%;
+}
+
+.teamSection div:first-of-type {
+    padding-bottom: 15px;
+}
+
+.teamMemberContainer {
+    width: 50%;
+}
+
+.teamMemberContentContainer {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.teamTextContainer {
+    width: 60%;
+    padding-right: 3%;
+}
+
+.teamImgContainer {
+    width: 40%;
+}
+
+.teamImgContainer img {
+    width: 100%;
+}
+
+
+/*
+Testimonial Section
+*/
+
+.testimonialContainer {
+    display: flex;
+    align-items: center;
+}
+
+.testimonialContainer h3 {
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.testimonialContainer p {
+    width: 75%;
+}
+
+
+
+/*
+Footer Layout
+*/
+
+footer {
+    display: flex;
+    align-items: stretch;
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    width: 50%;
+}
+
+.contactInfoContainer li {
+    padding-bottom: 10px;
+}
+
+.socialLinksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    width: 50%;
+}
+
+.socialLinksContainer li {
+    width: 5%;
+}
+
+.socialLinksContainer img {
+    width: 100%;
+}
+
+
+/*
+Header and Nav Style
+*/
+
+header {
+    background-image: url('../img/prosciuttoPizza.jpg');
+    background-size: 100%;
+    background-position: 0, -50px;
+    background-repeat: no-repeat;
+}
+
+header,
+nav {
+    background-color: #F9EFED;
+}
+
+h1 {
+    font-size: 5rem;
+
+}
+
+h1,
+nav li {
+    font-family: 'Prociono', serif;
+    color: #391117;
+}
+
+nav li {
+    font-size: 3rem;
+}
+
+/*
+Main Style
+*/
+
+h2,
+h3 {
+    font-family: 'Prociono', serif;
+}
+
+.introSection {
+    background: linear-gradient(to left, #c29abc, #e9b9e2);
+    background: linear-gradient(to left, #d4b0b1, #ffd4d5); 
+    color: #281510;
+}
+
+.aboutTextContainer p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.specialDiscount {
+    font-size: 3rem;
+}
+
+.specialsSection {
+    background: linear-gradient(to right, #dbd3a3, #f4e9d4) #f4e9d4;
+}
+
+.teamSection {
+    background: linear-gradient(to right, #cdd2d7, #f7fbff);
+}
+
+.testimonialSection {
+    background: linear-gradient(to right, #e8d7d6, #ffedec);
+}
+
+/*
+Footer Style
+*/
+
+
+footer {
+    font-size: 1.5rem;
+    font-family: 'Prociono', serif;
+    color: #391117;
+    background-color: #F9EFED;
+}
