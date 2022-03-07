@@ -274,7 +274,6 @@ Testimonial Section
 }
 
 
-
 /*
 Footer Layout
 */
@@ -366,7 +365,9 @@ h3 {
 }
 
 .introSection {
-    background: linear-gradient(to left, #c29abc, #e9b9e2);
+    background: -moz-linear-gradient(to left, #d4b0b1, #ffd4d5); 
+    background: -ms-linear-gradient(to left, #d4b0b1, #ffd4d5); 
+    background: -webkit-linear-gradient(to left, #d4b0b1, #ffd4d5); 
     background: linear-gradient(to left, #d4b0b1, #ffd4d5); 
     color: #281510;
 }
@@ -381,14 +382,23 @@ h3 {
 }
 
 .specialsSection {
-    background: linear-gradient(to right, #dbd3a3, #f4e9d4) #f4e9d4;
+    background: -moz-linear-gradient(to right, #dbd3a3, #f4e9d4);
+    background: -ms-linear-gradient(to right, #dbd3a3, #f4e9d4);
+    background: -webkit-linear-gradient(to right, #dbd3a3, #f4e9d4);
+    background: linear-gradient(to right, #dbd3a3, #f4e9d4);
 }
 
 .teamSection {
+    background: -moz-linear-gradient(to right, #cdd2d7, #f7fbff);
+    background: -ms-linear-gradient(to right, #cdd2d7, #f7fbff);
+    background: -webkit-linear-gradient(to right, #cdd2d7, #f7fbff);
     background: linear-gradient(to right, #cdd2d7, #f7fbff);
 }
 
 .testimonialSection {
+    background: -moz-linear-gradient(to right, #e8d7d6, #ffedec);
+    background: -ms-linear-gradient(to right, #e8d7d6, #ffedec);
+    background: -webkit-linear-gradient(to right, #e8d7d6, #ffedec);
     background: linear-gradient(to right, #e8d7d6, #ffedec);
 }
 
