@@ -181,15 +181,6 @@ Intro Section
     align-items: center;
 }
 
-.aboutTextContainer {
-    width: 65%;
-    padding-right: 3%;
-}
-
-.aboutImgContainer {
-    width: 35%;
-}
-
 .aboutImgContainer img {
     width: 100%;
 }
@@ -199,20 +190,13 @@ Intro Section
 Specials Section
 */
 
-.specialsContainer {
-    display: flex;
-    justify-content: space-between;
-}
-
 .individualSpecial {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 30%;
 }
 
 .individualSpecial img {
-    width: 80%;
     align-self: center;
     margin-bottom: 10px;
 }
@@ -221,32 +205,16 @@ Specials Section
 Team Section
 */
 
-.teamRow {
-    display: flex;
-    gap: 2%;
-}
-
 .teamSection div:first-of-type {
     padding-bottom: 15px;
 }
 
-.teamMemberContainer {
-    width: 50%;
-}
+
 
 .teamMemberContentContainer {
     display: flex;
     align-items: center;
     gap: 2%;
-}
-
-.teamTextContainer {
-    width: 60%;
-    padding-right: 3%;
-}
-
-.teamImgContainer {
-    width: 40%;
 }
 
 .teamImgContainer img {
@@ -304,7 +272,7 @@ footer {
 }
 
 .socialLinksContainer li {
-    width: 5%;
+    width: 35px;
 }
 
 .socialLinksContainer img {
@@ -413,3 +381,125 @@ footer {
     color: #391117;
     background-color: #F9EFED;
 }
+
+
+
+/*
+MEDIA QUERIES
+*/
+
+/*
+Special 3-column and Team 2x2 grid Break Point
+*/
+
+@media screen and (min-width: 935px) {
+
+    .specialsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .individualSpecial {
+        width: 30%;
+    }
+
+    .individualSpecial img {
+        width: 80%;
+    }
+
+    .teamRow {
+        display: flex;
+        gap: 2%;
+    }
+
+    .teamMemberContainer {
+        width: 50%;
+    }
+
+    .teamTextContainer {
+        padding-right: 3%;
+    }
+}
+
+@media screen and (min-width: 502px) and (max-width: 934px) {
+
+    .individualSpecial img {
+        width: 60%;
+    }
+
+    .teamTextContainer {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+
+/*
+About Text and Picture Row Break Point
+*/
+
+@media screen and (min-width: 897px) {
+
+    .aboutTextContainer {
+        width: 65%;
+        padding-right: 3%;
+    }
+    
+    .aboutImgContainer {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 896px) {
+
+    .aboutContentContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+/*
+Nav Break Point
+*/
+
+@media screen and (max-width: 720px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+
+
+/* 
+Team Member Text and Picture Row Break Point
+Specials Pictures Break Point
+ */
+
+@media screen and (min-width: 502px) {
+
+    .teamTextContainer {
+        width: 60%;
+    }
+    
+    .teamImgContainer {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 501px) {
+
+    .teamMemberContentContainer {
+        flex-direction: column;
+    }
+
+    .teamImgContainer {
+        width: 80%;
+    }
+
+    .individualSpecial img {
+        width: 80%;
+    }
+}
+    
