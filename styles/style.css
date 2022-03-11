@@ -449,7 +449,7 @@ Nav Break Point
 @media screen and (min-width: 919px) {
 
     .hamburgerHeader {
-        display: none;
+        visibility: hidden;
     }
 }
 
@@ -457,7 +457,7 @@ Nav Break Point
 @media screen and (max-width: 918px) {
 
     nav {
-        display: none;
+        visibility: hidden;
         position: fixed;
         top: 31px;
     }

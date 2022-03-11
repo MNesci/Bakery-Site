@@ -11,23 +11,27 @@ let headerLogo = document.querySelector('.hamburgerHeaderLogo');
 hamburgerIcon.addEventListener('click', function(click) {
 
     // if nav display === 'none', set nav display to 'block' and hide header logo
-    if (nav.style.display === 'none') {
-        nav.style.display = 'block';
-        headerLogo.style.display = 'none';
+    if (nav.style.visibility === 'hidden') {
+        nav.style.visibility = 'visible';
+        headerLogo.style.visibility = 'hidden';
     } 
     
     // otherwise, set nav display to 'none' and show header logo
     else {
-        nav.style.display = 'none';
-        headerLogo.style.display = 'block';
+        nav.style.visibility = 'hidden';
+        headerLogo.style.visibility = 'visible';
     }
 })
 
 // function that sets nav to display when window is resized if window is large enough
+
 function displayNavOnResize() {
     if (window.innerWidth > 918) {
-        nav.style.display = 'block';
-        headerLogo.style.display = 'none';
+        nav.style.visibility = 'visible';
+        headerLogo.style.visibility = 'hidden';
+    } else {
+        nav.style.visibility = 'hidden';
+        headerLogo.style.visibility = 'visible';
     }
 }
 
