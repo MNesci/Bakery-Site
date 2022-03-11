@@ -145,7 +145,6 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2%;
     padding: 20px 5% 20px 5%;
 }
 
@@ -162,8 +161,9 @@ nav ul {
 Main Layout
 */
 
-main > section {
-    padding: 15px 3%;
+main > section,
+footer {
+    padding: 40px 3%;
 }
 
 h2,
@@ -209,8 +209,6 @@ Team Section
     padding-bottom: 15px;
 }
 
-
-
 .teamMemberContentContainer {
     display: flex;
     align-items: center;
@@ -231,16 +229,6 @@ Testimonial Section
     align-items: center;
 }
 
-.testimonialContainer h3 {
-    width: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.testimonialContainer p {
-    width: 75%;
-}
-
 
 /*
 Footer Layout
@@ -248,19 +236,14 @@ Footer Layout
 
 footer {
     display: flex;
-    align-items: stretch;
+    align-items: center;
 }
 
 .contactInfoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    width: 50%;
-}
-
-.contactInfoContainer li {
-    padding-bottom: 10px;
+    gap: 15px;
 }
 
 .socialLinksContainer {
@@ -268,7 +251,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 3%;
-    width: 50%;
 }
 
 .socialLinksContainer li {
@@ -376,7 +358,7 @@ Footer Style
 
 
 footer {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Prociono', serif;
     color: #391117;
     background-color: #F9EFED;
@@ -464,9 +446,59 @@ About Text and Picture Row Break Point
 Nav Break Point
 */
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 919px) {
+
+    .hamburgerHeader {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 918px) {
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 31px;
+    }
+
     nav ul {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .hamburgerHeader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        font-family: 'Prociono', serif;
+        color: #391117;
+        background-color: #F9EFED;
+    }
+
+    .hamburgerIconContainer {
+        width: 30px;
+        border: 2px solid black;
+    }
+
+    .hamburgerIconContainer img {
+        width: 100%;
+    }
+
+    .hamburgerHeaderLogoCenteringContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hamburgerHeaderLogoContainer {
+        height: 31px;
+    }
+
+    .hamburgerHeaderLogo {
+        height: 100%;
     }
 }
 
@@ -503,3 +535,53 @@ Specials Pictures Break Point
     }
 }
     
+
+
+/*
+Testimonials Break Point
+*/
+
+@media screen and (min-width: 421px) {
+
+    .testimonialContainer h3 {
+        width: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .testimonialContainer p {
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .testimonialContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+/*
+Footer Break Point
+*/
+
+@media screen and (min-width: 363px) {
+    .contactInfoContainer {
+        width: 50%;
+    }
+    
+    .socialLinksContainer {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 362px) {
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

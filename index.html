@@ -12,32 +12,43 @@
 </head>
 <body>
     <header>
-        
+        <div class="hamburgerHeader">
+            <div class="hamburgerIconContainer">
+                <img src="./img/hamburgerIcon.svg" alt="Hamburger Navigation Menu Icon">
+            </div>
+            <div class="hamburgerHeaderLogoCenteringContainer">
+                <div class="hamburgerHeaderLogoContainer">
+                    <a href="#vincenzaDestination">
+                        <img class="hamburgerHeaderLogo" src="./img/coverCropped.png" alt="Vincenza's Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <h1>Authentic Italian Cuisine</h1>
     <nav>
         <ul>
             <li class="logoContainer">
-                <a href="#">
+                <a href="#vincenzaDestination">
                     <img class="logo" src="./img/coverCropped.png" alt="Vincenza's Logo">
                 </a>
             </li>
             <li>
-                <a href="#">Pizza</a>
+                <a href="#specialsDestination">Specials</a>
             </li>
             <li>
-                <a href="#">Pasta</a>
+                <a href="#familyDestination">Our Family</a>
             </li>
             <li>
-                <a href="#">Pastries</a>
+                <a href="#testimonialDestination">Testimonials</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="#contactDestination">Contact Us</a>
             </li>
         </ul>
     </nav>
     <main>
-        <section class="introSection">
+        <section id="vincenzaDestination" class="introSection">
             <h2>Vincenza's Italian Bakery</h2>
             <div class="aboutContentContainer">
                 <div class="aboutTextContainer">
@@ -48,7 +59,7 @@
                 </div>
             </div>
         </section>
-        <section class="specialsSection">
+        <section id="specialsDestination" class="specialsSection">
             <h2>Weekly Specials</h2>
             <div class="specialsContainer">
                 <section class="individualSpecial">
@@ -68,7 +79,7 @@
                 </section>
             </div>
         </section>
-        <section class="teamSection">
+        <section id="familyDestination" class="teamSection">
             <h2>Our Family</h2>
             <div class="teamRow">
                 <section class="teamMemberContainer">
@@ -119,7 +130,7 @@
                 </section>
             </div>
         </section>
-        <section class="testimonialSection">
+        <section id="testimonialDestination" class="testimonialSection">
             <h2>Testimonials</h2>
             <section class="testimonialContainer">
                 <h3>Julia</h3>
@@ -139,10 +150,11 @@
             </section>
         </section>
     </main>
-    <footer>
+    <footer id="contactDestination">
         <ul class="contactInfoContainer">
             <li>123 McVean St East</li>
-            <li>Open Sun - Sat: 6am - 6pm</li>
+            <li>Open Sun - Sat:</li>
+            <li>6am - 6pm</li>
             <li>(123) 456 - 7890</li>
         </ul>
         <ul class="socialLinksContainer">
@@ -163,5 +175,6 @@
             </li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
