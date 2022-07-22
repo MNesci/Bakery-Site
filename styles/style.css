@@ -161,8 +161,9 @@ nav ul {
 Main Layout
 */
 
-main > section,
-footer {
+.bufferSection {
+    max-width: 1200px;
+    margin: auto;
     padding: 40px 3%;
 }
 
@@ -205,7 +206,7 @@ Specials Section
 Team Section
 */
 
-.teamSection div:first-of-type {
+.teamRow:first-of-type {
     padding-bottom: 15px;
 }
 
@@ -234,7 +235,7 @@ Testimonial Section
 Footer Layout
 */
 
-footer {
+footer .bufferSection {
     display: flex;
     align-items: center;
 }
@@ -274,12 +275,13 @@ body {
 }
 
 header {
+    background-color: #cdd2d7;
     background-image: url('../img/prosciuttoPizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     background-attachment: fixed;
-    height: 80%;
+    height: 45%;
 
 }
 
@@ -580,7 +582,7 @@ Footer Break Point
 
 
 @media screen and (max-width: 362px) {
-    footer {
+    footer .bufferSection {
         flex-direction: column;
         gap: 40px;
     }
