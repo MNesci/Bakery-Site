@@ -571,7 +571,7 @@ Footer Break Point
 */
 
 @media screen and (min-width: 363px) {
-    .contactInfoContainer {
+    footer address {
         width: 50%;
     }
     
